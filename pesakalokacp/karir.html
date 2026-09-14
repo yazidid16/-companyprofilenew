@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bergabunglah dengan PT. Pesaka Loka Kirana. Temukan lowongan pekerjaan dan kembangkan karir Anda bersama kami.">
+    <title>Karir & Lowongan Kerja - PT. Pesaka Loka Kirana</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="veil" aria-hidden="true">
+        <div class="veil-inner text-center">
+            <img src="img/Asset 15.svg" alt="Pesaka Logo" style="filter: brightness(0) invert(1); height: 45px;" class="mb-3">
+            <div class="text-gold font-mono small" style="letter-spacing: 3px;">MEMUAT...</div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         HEADER & NAVIGATION
+         ========================================== -->
+    <header class="fixed-top shadow-sm">
+        <!-- Tambahan py-3 agar navbar lebih tinggi dan lega -->
+        <nav class="navbar navbar-expand-lg navbar-modern py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Pesaka Homepage">
+                    <img src="img/Asset 15.svg" alt="PT Pesaka Loka Kirana" height="45"> <!-- Ukuran logo sedikit dibesarkan -->
+                </a>
+                
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                    <ul class="navbar-nav align-items-lg-center gap-lg-3"> <!-- Tambahan gap biar menu tidak terlalu dempet -->
+                        <li class="nav-item"><a class="nav-link " href="index.html#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Layanan
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="index.html#layanan">Tempat Penimbunan Sementara (TPS)</a></li>
+                                <li><a class="dropdown-item" href="index.html#layanan">Gudang Umum</a></li>
+                            </ul>
+                        </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fasilitas
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="index.html#fasilitas">Fasilitas Info</a></li>
+                                <li><a class="dropdown-item" href="index.html#jaringanstrategis">Jaringan Strategis</a></li>
+                                <li><a class="dropdown-item" href="index.html#dokumentasi">Dokumentasi</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="index.html#berita">Berita</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="karir.html">Karir</a></li>
+                        
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="portal.html" class="btn btn-gold px-4 py-2 shadow-sm w-100">
+                                <i class="bi bi-box-arrow-in-right me-1"></i> Login Akses
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <main style="padding-top: auto;">
+
+        <!-- HERO SECTION KARIR -->
+        <section class="position-relative d-flex align-items-center flex-column justify-content-center bg-brand py-5" style="min-height: 35vh; overflow: hidden;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 z-0">
+                <img src="img/gambarho.jpg" alt="Karir Pesaka Background" class="w-100 h-100 object-fit-cover" style="opacity: 0.25;">
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(rgba(36,22,20,0.8), rgba(36,22,20,0.95));"></div>
+            </div>
+            <div class="container position-relative z-2 text-center">
+                <span class="badge-gold mb-3 font-mono">MARI BERGABUNG</span>
+                <h1 class="text-white font-serif fw-bold mb-3 display-4">Karir Pesaka</h1>
+                <p class="text-white-50 mx-auto" style="max-width: 600px;">
+                    Jadilah bagian dari tim yang menggerakkan ekosistem logistik Indonesia. Temukan peluang karir yang sesuai dengan passion Anda.
+                </p>
+            </div>
+        </section>
+
+        <!-- FILTER & LIST LOWONGAN -->
+        <section class="py-5 bg-light min-vh-100">
+            <div class="container">
+                
+                <!-- Filter Bar (Biar User Gampang Nyari) -->
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <form class="glass-panel p-4 rounded-4 shadow-sm bg-white border-0">
+                            <div class="row g-3">
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                                        <input type="text" class="form-control border-start-0 ps-0" placeholder="Cari posisi pekerjaan...">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-select text-muted">
+                                        <option selected>Semua Lokasi</option>
+                                        <option value="1">Head Office (Jakarta Utara)</option>
+                                        <option value="2">Gudang Umum (Bekasi)</option>
+                                        <option value="3">Fasilitas TPS</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn btn-brand w-100 text-white fw-bold bg-brand hover-zoom">Terapkan Filter</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Job List Container -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        
+                        <!-- Header List -->
+                        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
+                            <h5 class="fw-bold color-brand font-serif m-0">Daftar Lowongan Tersedia <span class="badge bg-brand ms-2 rounded-pill font-sans">3 Posisi</span></h5>
+                            <span class="text-muted small font-mono d-none d-md-block">Terakhir diperbarui: Hari ini</span>
+                        </div>
+
+                        <!-- LIST 1 (Sesuai Referensi ILCS) -->
+                        <article class="job-card rounded-4 p-4 mb-4 bg-white d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
+                            <div>
+                                <h4 class="fw-bold color-brand font-serif mb-2">IT Support & Network Helpdesk</h4>
+                                <div class="d-flex flex-wrap gap-3 mb-3 font-mono small text-muted">
+                                    <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> Head Office, Jakarta</span>
+                                    <span><i class="bi bi-briefcase-fill text-gold me-1"></i> Full-Time</span>
+                                    <span><i class="bi bi-clock-fill text-gold me-1"></i> Diposting 2 hari yang lalu</span>
+                                </div>
+                                <p class="text-muted small m-0 lh-lg" style="max-width: 700px;">
+                                    Mengelola pemeliharaan sistem IT pergudangan dan infrastruktur jaringan menggunakan Ruijie Cloud. Kandidat dengan pengalaman desain antarmuka (Figma / Serif Affinity) akan menjadi nilai tambah.
+                                </p>
+                            </div>
+                            <div class="text-md-end mt-3 mt-md-0 min-w-150px">
+                                <a href="karir-detail.html" class="btn btn-outline-brand fw-bold px-4 rounded-pill font-mono w-100 text-nowrap">Lihat Detail <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- LIST 2 -->
+                        <article class="job-card rounded-4 p-4 mb-4 bg-white d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
+                            <div>
+                                <h4 class="fw-bold color-brand font-serif mb-2">Warehouse Admin Coordinator</h4>
+                                <div class="d-flex flex-wrap gap-3 mb-3 font-mono small text-muted">
+                                    <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> Gudang Umum, Bekasi</span>
+                                    <span><i class="bi bi-briefcase-fill text-gold me-1"></i> Full-Time</span>
+                                    <span><i class="bi bi-clock-fill text-gold me-1"></i> Diposting 1 minggu yang lalu</span>
+                                </div>
+                                <p class="text-muted small m-0 lh-lg" style="max-width: 700px;">
+                                    Bertanggung jawab atas pencatatan barang masuk dan keluar, memastikan keakuratan data pada sistem WMS, dan berkoordinasi dengan tim lapangan untuk proses operasional logistik harian.
+                                </p>
+                            </div>
+                            <div class="text-md-end mt-3 mt-md-0 min-w-150px">
+                                <a href="karir-detail.html" class="btn btn-outline-brand fw-bold px-4 rounded-pill font-mono w-100 text-nowrap">Lihat Detail <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- LIST 3 -->
+                        <article class="job-card rounded-4 p-4 mb-4 bg-white d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
+                            <div>
+                                <h4 class="fw-bold color-brand font-serif mb-2">HSE Officer (Health, Safety, Environment)</h4>
+                                <div class="d-flex flex-wrap gap-3 mb-3 font-mono small text-muted">
+                                    <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> Fasilitas TPS, Tj. Priok</span>
+                                    <span><i class="bi bi-briefcase-fill text-gold me-1"></i> Contract</span>
+                                    <span><i class="bi bi-clock-fill text-gold me-1"></i> Diposting 2 minggu yang lalu</span>
+                                </div>
+                                <p class="text-muted small m-0 lh-lg" style="max-width: 700px;">
+                                    Mengawasi dan mengimplementasikan standar keselamatan kerja di area TPS, melakukan inspeksi rutin pada alat berat, dan menyusun laporan bulanan terkait K3 (Keselamatan dan Kesehatan Kerja).
+                                </p>
+                            </div>
+                            <div class="text-md-end mt-3 mt-md-0 min-w-150px">
+                                <a href="karir-detail.html" class="btn btn-outline-brand fw-bold px-4 rounded-pill font-mono w-100 text-nowrap">Lihat Detail <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
+                        </article>
+
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation" class="mt-5">
+                            <ul class="pagination justify-content-center font-mono">
+                                <li class="page-item disabled"><a class="page-link text-muted border-0 bg-transparent" href="#">Sebelumnya</a></li>
+                                <li class="page-item"><a class="page-link text-white bg-brand border-0 rounded-3 mx-1 shadow-sm" href="#">1</a></li>
+                                <li class="page-item disabled"><a class="page-link text-muted border-0 bg-transparent" href="#">Selanjutnya</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-section mt-auto">
+        <div class="container pb-4">
+            <div class="row g-4 mb-5">
+                
+                <!-- Kolom 1: Logo & Alamat -->
+                <div class="col-lg-4 pe-lg-5">
+                    <img src="img/Logo Landscape White.svg" alt="Pesaka Logo" height="40" class="mb-4 d-block" style="filter: brightness(0) invert(1);">
+                    <h6 class="text-white fw-bold font-sans mb-3" style="font-size: 0.95rem;">Alamat</h6>
+                    <p class="text-white-50 small mb-0 lh-lg font-sans">
+                        Kantor HO Pesaka Loka Kirana<br>
+                        Jl. Plumpang Semper No.23, RT.1/RW.12, Tugu Utara,<br>
+                        Kec. Koja, Jakarta Utara, Indonesia 14260<br>
+                        Telp: (021) 4300588
+                    </p>
+                </div>
+                
+                <!-- Kolom 2: Perusahaan -->
+                <div class="col-lg-2 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Perusahaan</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="#profil" class="text-white text-decoration-none fw-semibold">Profil Perusahaan</a></li>
+                        <li class="mb-3"><a href="#fasilitas" class="text-white text-decoration-none fw-semibold">Jaringan Strategis</a></li>
+                        <li class="mb-3"><a href="karir.html" class="text-white text-decoration-none fw-semibold">Karir</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Layanan Utama -->
+                <div class="col-lg-3 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Layanan Utama</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="#layanan" class="text-white text-decoration-none fw-semibold">Tempat Penimbunan Sementara</a></li>
+                        <li class="mb-3"><a href="#layanan" class="text-white text-decoration-none fw-semibold">Gudang Umum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 4: Tautan Lainnya -->
+                <div class="col-lg-3 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Tautan Lainnya</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="portal.html" class="text-white text-decoration-none fw-semibold">Portal Akses Terpadu</a></li>
+                        <li class="mb-3"><a href="#berita" class="text-white text-decoration-none fw-semibold">Berita & Informasi</a></li>
+                        <li class="mb-3"><a href="#" class="text-white text-decoration-none fw-semibold">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bagian Bawah: Copyright & Social Media -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-secondary pt-4 text-white-50 font-sans footer-bottom">
+                <div class="mb-3 mb-md-0">
+                    <small>&copy; 2026 PT Pesaka Loka Kirana.</small>
+                </div>
+                <div class="d-flex gap-4 social-icons">
+                    <a href="#" aria-label="Instagram Pesaka" class="text-white text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" aria-label="LinkedIn Pesaka" class="text-white text-decoration-none"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="mailto:info@pesaka.co.id" aria-label="Email Pesaka" class="text-white text-decoration-none"><i class="bi bi-envelope fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

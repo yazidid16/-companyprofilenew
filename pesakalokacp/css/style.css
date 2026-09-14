@@ -1,0 +1,669 @@
+/* ==========================================================================
+   PT PESAKA LOKA KIRANA - MAIN STYLESHEET
+   Fungsi: Ngatur semua warna, ukuran, dan posisi elemen di website
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. IMPORT FONT GLOBAL & LOKAL
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Font Lokal: Butler (Dipakai buat Heading Utama) */
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-Bold.woff2') format('woff2'),
+         url('../fonts/Butler-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-Regular.woff2') format('woff2'),
+         url('../fonts/Butler-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ==========================================================================
+   2. VARIABEL WARNA & PENGATURAN DASAR (RESET)
+   ========================================================================== */
+:root {
+    /* Palet Warna Utama Perusahaan */
+    --brand-dark: #241614;      /* Cokelat Tua */
+    --brand-accent: #3A231F;    /* Cokelat Lebih Terang */
+    --gold-primary: #C49A44;    /* Emas Utama */
+    --gold-hover: #E3CB8C;      /* Emas Terang (Buat efek hover) */
+    --bg-light: #f8f9fa;        /* Latar Belakang Abu-abu Terang */
+
+    /* Pengaturan Jenis Font */
+    --font-serif: 'Butler', serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+    --font-sans: 'Inter', sans-serif;
+}
+
+/* Biar pas klik menu navigasi, layarnya gulir pelan dan nggak ketutupan navbar */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px; 
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-light);
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* ==========================================================================
+   3. KELAS BANTUAN (Teks, Warna, Efek)
+   ========================================================================== */
+.font-serif { font-family: var(--font-serif); }
+.font-mono  { font-family: var(--font-mono); }
+
+.color-brand { color: var(--brand-dark); }
+.text-gold   { color: var(--gold-primary); }
+.bg-brand    { background-color: var(--brand-dark); }
+
+/* Efek Kaca (Glassmorphism) buat form tracking */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(196, 154, 68, 0.3);
+}
+
+/* Efek gambar membesar kalau disorot mouse */
+.hover-zoom {
+    transition: transform 0.4s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.08);
+}
+
+
+/* ==========================================================================
+   4. KOMPONEN UI (Tombol, Badge, Card)
+   ========================================================================== */
+
+/* --- Tombol Emas --- */
+
+/* --- Tombol Outline Custom (Detail Layanan & Berita) --- */
+.btn-outline-brand {
+    color: var(--brand-dark);
+    border: 2px solid var(--brand-dark);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-brand:hover {
+    background-color: var(--brand-dark);
+    color: #fff;
+}
+
+.btn-outline-gold {
+    color: var(--gold-primary);
+    border: 2px solid var(--gold-primary);
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+    background-color: var(--gold-primary);
+    color: var(--brand-dark);
+}
+
+.btn-gold {
+    background-color: var(--gold-primary);
+    color: var(--brand-dark);
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    color: var(--brand-dark);
+}
+
+/* --- Badge Label (Contoh: "BERDIRI 1968") --- */
+.badge-gold {
+    background-color: rgba(196, 154, 68, 0.2);
+    color: var(--gold-hover);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* --- Kotak Layanan (Service Card) --- */
+.service-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border-top: 4px solid var(--gold-primary);
+    transition: 0.3s ease;
+}
+.service-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important; 
+}
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(196, 154, 68, 0.1);
+    color: var(--gold-primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+/* --- Kotak Kebijakan Mutu 5K --- */
+.mutu-card {
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.mutu-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-primary);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+}
+
+/* --- Tombol di Galeri Foto --- */
+.gallery-btn {
+    transition: opacity 0.3s ease;
+}
+.gallery-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* ==========================================================================
+   5. PENGATURAN MENU TAB (TABS NAVIGATION)
+   ========================================================================== */
+
+/* Tab Profil (Kotak) */
+.btn-custom-tab {
+    color: var(--brand-dark);
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+.btn-custom-tab:hover {
+    color: var(--gold-primary);
+}
+.nav-pills .nav-link.btn-custom-tab.active {
+    background-color: var(--brand-dark);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Tab Pilihan Gudang (Bentuk Pil) */
+.btn-custom-tab-dark {
+    color: #6c757d;
+    background: transparent;
+    border: 1px solid #dee2e6;
+}
+.btn-custom-tab-dark:hover {
+    color: var(--brand-dark);
+}
+.nav-pills .nav-link.btn-custom-tab-dark.active {
+    background-color: var(--brand-dark);
+    color: #fff;
+    border-color: var(--brand-dark);
+}
+
+/* Tab Garis Bawah (Detail Spesifikasi TPS) */
+.custom-bottom-border {
+    position: relative;
+    color: #6c757d !important;
+}
+.custom-bottom-border.active {
+    color: var(--brand-dark) !important;
+}
+.custom-bottom-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--gold-primary);
+    transition: width 0.3s ease;
+}
+.custom-bottom-border.active::after,
+.custom-bottom-border:hover::after {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   6. STRUKTUR BAGIAN WEBSITE (Header, Hero, Marquee, Footer)
+   ========================================================================== */
+
+/* --- Top Bar & Navbar Utama --- */
+.top-bar {
+    background-color: var(--brand-dark);
+    color: #d1d5db;
+    padding: 10px 0;
+}
+.top-bar i { color: var(--gold-primary); margin-right: 5px; }
+
+.navbar-modern {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 12px 0;
+}
+.navbar-brand { font-weight: 800; color: var(--brand-dark); }
+.navbar-modern .nav-link {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+.navbar-modern .nav-link:hover { color: var(--gold-primary); }
+
+/* --- Hero Section (Layar Paling Atas) --- */
+.hero-heading {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+.hero-subheading {
+    font-size: 1.1rem;
+    max-width: 650px;
+}
+.hero-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-serif);
+    font-weight: 800;
+    font-size: 16vw;
+    color: rgba(255, 255, 255, 0.03); /* Transparan tipis banget */
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+.tracking-widget {
+    width: 100%;
+    max-width: 600px;
+}
+@media (max-width: 768px) {
+    .tracking-widget { width: 95%; padding: 1.2rem !important; }
+}
+
+/* --- Teks Berjalan di Bawah Hero (Marquee Info) --- */
+.hero-text-marquee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(22, 13, 12, 0.95);
+    border-top: 1px solid rgba(196, 154, 68, 0.2);
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 10;
+}
+.hero-text-marquee .track {
+    display: inline-flex;
+    align-items: center;
+    animation: scrollInfoText 25s linear infinite;
+    color: #d1d5db;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+.hero-text-marquee .track:hover {
+    animation-play-state: paused;
+}
+.hero-text-marquee .dot {
+    color: var(--gold-primary);
+    margin: 0 40px;
+    font-size: 0.6rem;
+}
+
+/* --- Logo Grup Jalan (Bila Dipakai) --- */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.marquee-track {
+    display: inline-block;
+    animation: scrollMarquee 25s linear infinite;
+}
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.group-logo-img {
+    height: 45px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.3s ease;
+}
+.group-logo-img:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.08);
+}
+
+/* --- Footer Area --- */
+.footer-section {
+    background-color: var(--brand-dark);
+    padding: 70px 0 20px;
+}
+
+.footer-links a {
+    transition: opacity 0.3s ease, color 0.3s ease;
+    opacity: 0.9;
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--gold-primary) !important;
+}
+
+.footer-bottom {
+    border-color: rgba(255, 255, 255, 0.1) !important; /* Garis tipis transparan */
+}
+
+.social-icons a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--gold-primary) !important;
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================================
+   7. WIDGET MELAYANG (Scrollbar & Dot Navigation)
+   ========================================================================== */
+
+/* --- Custom Scrollbar Browser --- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--brand-dark); 
+}
+::-webkit-scrollbar-thumb {
+    background: #55332d;
+    border-radius: 10px;
+    border: 2px solid var(--brand-dark);
+    transition: background 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-primary); 
+}
+
+/* --- Navigasi Titik Kanan --- */
+.dot-navigation {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1050;
+}
+
+.dot-link {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* Kita ganti putih transparan jadi warna EMAS TRANSPARAN (30% opacity) biar elegan */
+    background-color: rgba(196, 154, 68, 0.3); 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: block;
+}
+
+.dot-link:hover {
+    /* Pas disorot mouse, emasnya lebih tebel (70% opacity) */
+    background-color: rgba(196, 154, 68, 0.7);
+    transform: scale(1.2);
+}
+
+.dot-link.active {
+    height: 30px;
+    border-radius: 10px;
+    /* Kalau lagi aktif, pake warna emas solid */
+    background-color: var(--gold-primary);
+}
+
+/* --- Efek Hover Teks Footer Baru --- */
+.footer-links a {
+    transition: opacity 0.3s ease, color 0.3s ease;
+    opacity: 0.9;
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--gold-primary) !important;
+}
+
+.social-icons a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--gold-primary) !important;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   8. POP-UP MODAL (Lacak Kontainer & Persetujuan Cookies)
+   ========================================================================== */
+
+/* --- Latar Belakang Modal Blur --- */
+.modal {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+.modal-backdrop.show {
+    opacity: 0.55 !important;
+    background-color: #000000 !important; 
+}
+.modal-content {
+    overflow: hidden;
+    border: 1px solid rgba(196, 154, 68, 0.2) !important;
+}
+
+/* --- Pop-up Notifikasi Cookies --- */
+.cookie-popup {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    max-width: 380px;
+    z-index: 1060;
+    border-left: 5px solid var(--gold-primary);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.cookie-popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .cookie-popup {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        max-width: none;
+    }
+}
+
+/* ==========================================================================
+   9. DAFTAR ANIMASI (Keyframes)
+   ========================================================================== */
+
+#veil {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: var(--brand-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.8s cubic-bezier(0.65, 0.02, 0.16, 1), opacity 0.6s ease;
+}
+#veil.done {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.veil-inner {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scrollInfoText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.33%); }
+}
+@keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* --- Penyesuaian Body untuk Navbar Fixed --- */
+body {
+    padding-top: 90px; /* Jarak agar konten pertama tidak bersembunyi di balik navbar */
+}
+
+/* --- Tampilan Navbar yang Lebih Besar & Elegan --- */
+.navbar-modern {
+    background: rgba(255, 255, 255, 0.98);
+    transition: all 0.3s ease;
+}
+.navbar-modern .nav-link {
+    font-size: 0.95rem; /* Font dibesarkan sedikit agar mudah dibaca */
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem !important;
+}
+
+/* --- Tombol Kembali Ke Atas (Back to Top) --- */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--gold-primary);
+    color: var(--brand-dark);
+    border-radius: 8px; /* Agak kotak sesuai referensi gambar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--brand-dark);
+    color: var(--gold-primary);
+    transform: translateY(-4px); /* Efek melayang saat kursor diarahkan */
+}
+
+/* --- Efek Overlay Galeri --- */
+.gallery-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-link:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-link:hover img {
+    transform: scale(1.05); /* Sedikit membesar saat dihover */
+}
+
+/* Transisi mulus saat filtering gambar */
+.gallery-item {
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* --- Halaman Karir (Job Card List) --- */
+.job-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 4px solid transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.job-card:hover {
+    border-left: 4px solid var(--gold-primary);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transform: translateX(8px);
+}
+
+.min-w-150px {
+    min-width: 150px;
+}
+
+/* --- Halaman Karir Detail (Form Upload CV) --- */
+.border-dashed {
+    border-style: dashed !important;
+    border-color: #dee2e6 !important;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.file-upload-wrapper:hover {
+    border-color: var(--gold-primary) !important;
+    background-color: rgba(196, 154, 68, 0.05) !important;
+}
+
+.file-upload-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}

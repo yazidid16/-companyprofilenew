@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detail Berita dan Informasi Terbaru PT. Pesaka Loka Kirana.">
+    <title>Detail Berita - PT. Pesaka Loka Kirana</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- PRELOADER -->
+    <div id="veil" aria-hidden="true">
+        <div class="veil-inner text-center">
+            <img src="img/Asset 15.svg" alt="Pesaka Logo" style="filter: brightness(0) invert(1); height: 45px;" class="mb-3">
+            <div class="text-gold font-mono small" style="letter-spacing: 3px;">MEMUAT...</div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         HEADER & NAVIGATION
+         ========================================== -->
+    <header class="fixed-top shadow-sm">
+        <!-- Tambahan py-3 agar navbar lebih tinggi dan lega -->
+        <nav class="navbar navbar-expand-lg navbar-modern py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Pesaka Homepage">
+                    <img src="img/Asset 15.svg" alt="PT Pesaka Loka Kirana" height="45"> <!-- Ukuran logo sedikit dibesarkan -->
+                </a>
+                
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                    <ul class="navbar-nav align-items-lg-center gap-lg-3"> <!-- Tambahan gap biar menu tidak terlalu dempet -->
+                        <li class="nav-item"><a class="nav-link " href="index.html#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Layanan
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="index.html#layanan">Tempat Penimbunan Sementara (TPS)</a></li>
+                                <li><a class="dropdown-item" href="index.html#layanan">Gudang Umum</a></li>
+                            </ul>
+                        </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fasilitas
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="index.html#fasilitas">Fasilitas Info</a></li>
+                                <li><a class="dropdown-item" href="index.html#jaringanstrategis">Jaringan Strategis</a></li>
+                                <li><a class="dropdown-item" href="index.html#dokumentasi">Dokumentasi</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="index.html#berita">Berita</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="karir.html">Karir</a></li>
+                        
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="portal.html" class="btn btn-gold px-4 py-2 shadow-sm w-100">
+                                <i class="bi bi-box-arrow-in-right me-1"></i> Login Akses
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <main style="padding-top: 110px;" class="mb-5">
+
+        <!-- KONTEN UTAMA ARTIKEL -->
+        <article class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    
+                    <!-- Breadcrumb & Kategori -->
+                    <nav aria-label="breadcrumb" class="mb-3">
+                        <ol class="breadcrumb font-mono small mb-0">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-gold">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html#berita" class="text-decoration-none text-gold">Berita</a></li>
+                            <li class="breadcrumb-item active text-muted" aria-current="page">Detail Informasi</li>
+                        </ol>
+                    </nav>
+
+                    <!-- Judul Berita -->
+                    <h1 class="display-5 fw-bold color-brand font-serif mb-3">Digitalisasi Sistem WMS di Gudang Pesaka untuk Efisiensi Logistik</h1>
+                    
+                    <!-- Meta Info (Tanggal & Penulis) -->
+                    <div class="d-flex align-items-center gap-3 text-muted font-mono small mb-4 pb-3 border-bottom">
+                        <span><i class="bi bi-calendar-event text-gold me-1"></i> 10 Sep 2026</span>
+                        <span>•</span>
+                        <span><i class="bi bi-person-fill text-gold me-1"></i> Tim Marcomm PT Pesaka Loka Kirana</span>
+                    </div>
+
+                    <!-- Gambar Utama / Banner Berita -->
+                    <div class="rounded-4 overflow-hidden shadow-sm mb-5" style="max-height: 450px;">
+                        <img src="img/Banner1.jpg" alt="Digitalisasi WMS Pesaka" class="w-100 h-100 object-fit-cover">
+                    </div>
+
+                    <!-- Paragraf Isi Berita -->
+                    <div class="article-content text-muted lh-lg font-sans" style="font-size: 1.05rem;">
+                        <p class="lead fw-semibold color-brand mb-4">
+                            Peningkatan efisiensi distribusi logistik melalui penerapan sistem Warehouse Management System (WMS) terbaru kini resmi diimplementasikan guna mendongkrak kualitas layanan bagi pelanggan setia kami.
+                        </p>
+                        
+                        <p class="mb-4">
+                            Dalam era transformasi digital yang bergerak cepat, PT. Pesaka Loka Kirana terus berkomitmen untuk menghadirkan inovasi berbasis teknologi di seluruh lini fasilitas pergudangan dan Tempat Penimbunan Sementara (TPS). Pembaruan sistem WMS ini dirancang khusus untuk memberikan visibilitas data secara *real-time* kepada para mitra bisnis.
+                        </p>
+
+                        <h3 class="fw-bold color-brand font-serif mt-5 mb-3">Keunggulan Utama Sistem WMS Terbaru</h3>
+                        <p class="mb-4">
+                            Dengan arsitektur sistem yang terintegrasi penuh, pengawasan arus barang masuk (*inbound*) hingga pengeluaran (*outbound*) dapat dipantau secara akurat untuk meminimalisir kesalahan operasional manual. Beberapa peningkatan kuncinya meliputi:
+                        </p>
+                        
+                        <ul class="mb-4 ps-3">
+                            <li class="mb-2"><strong>Otomatisasi Penempatan Rak:</strong> Sistem cerdas membaca kapasitas rongga gudang secara optimal.</li>
+                            <li class="mb-2"><strong>Pelacakan Dokumen Digital:</strong> Terhubung langsung dengan sinkronisasi data kepabeanan pelabuhan.</li>
+                            <li class="mb-2"><strong>Akses Laporan Cepat:</strong> Mitra dapat memonitor status inventaris kapan saja melalui portal pelanggan.</li>
+                        </ul>
+
+                        <p class="mb-4">
+                            Langkah strategis ini juga sejalan dengan komitmen perusahaan dalam mempertahankan standar mutu internasional ISO 9001:2015, di mana ketepatan dan transparansi operasional menjadi pilar utama pelayanan kami sejak tahun 1968.
+                        </p>
+                    </div>
+
+                    <!-- Bagian Share / Bagikan -->
+                    <div class="d-flex justify-content-between align-items-center border-top border-bottom py-4 my-5">
+                        <span class="fw-bold color-brand font-mono small">Bagikan Informasi Ini:</span>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-outline-brand btn-sm rounded-circle px-2 py-1" aria-label="Share ke WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#" class="btn btn-outline-brand btn-sm rounded-circle px-2 py-1" aria-label="Share ke LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-outline-brand btn-sm rounded-circle px-2 py-1" aria-label="Share ke Email"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Kembali -->
+                    <div class="text-center">
+                        <a href="index.html#berita" class="btn btn-gold px-4 py-2 rounded-pill fw-bold font-mono">
+                            <i class="bi bi-arrow-left me-2"></i> Kembali ke Berita Lainnya
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-section mt-auto">
+        <div class="container pb-4">
+            <div class="row g-4 mb-5">
+                
+                <!-- Kolom 1: Logo & Alamat -->
+                <div class="col-lg-4 pe-lg-5">
+                    <img src="img/Logo Landscape White.svg" alt="Pesaka Logo" height="40" class="mb-4 d-block" style="filter: brightness(0) invert(1);">
+                    <h6 class="text-white fw-bold font-sans mb-3" style="font-size: 0.95rem;">Alamat</h6>
+                    <p class="text-white-50 small mb-0 lh-lg font-sans">
+                        Kantor HO Pesaka Loka Kirana<br>
+                        Jl. Plumpang Semper No.23, RT.1/RW.12, Tugu Utara,<br>
+                        Kec. Koja, Jakarta Utara, Indonesia 14260<br>
+                        Telp: (021) 4300588
+                    </p>
+                </div>
+                
+                <!-- Kolom 2: Perusahaan -->
+                <div class="col-lg-2 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Perusahaan</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="#profil" class="text-white text-decoration-none fw-semibold">Profil Perusahaan</a></li>
+                        <li class="mb-3"><a href="#fasilitas" class="text-white text-decoration-none fw-semibold">Jaringan Strategis</a></li>
+                        <li class="mb-3"><a href="karir.html" class="text-white text-decoration-none fw-semibold">Karir</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Layanan Utama -->
+                <div class="col-lg-3 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Layanan Utama</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="#layanan" class="text-white text-decoration-none fw-semibold">Tempat Penimbunan Sementara</a></li>
+                        <li class="mb-3"><a href="#layanan" class="text-white text-decoration-none fw-semibold">Gudang Umum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 4: Tautan Lainnya -->
+                <div class="col-lg-3 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Tautan Lainnya</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="portal.html" class="text-white text-decoration-none fw-semibold">Portal Akses Terpadu</a></li>
+                        <li class="mb-3"><a href="#berita" class="text-white text-decoration-none fw-semibold">Berita & Informasi</a></li>
+                        <li class="mb-3"><a href="#" class="text-white text-decoration-none fw-semibold">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bagian Bawah: Copyright & Social Media -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-secondary pt-4 text-white-50 font-sans footer-bottom">
+                <div class="mb-3 mb-md-0">
+                    <small>&copy; 2026 PT Pesaka Loka Kirana.</small>
+                </div>
+                <div class="d-flex gap-4 social-icons">
+                    <a href="#" aria-label="Instagram Pesaka" class="text-white text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" aria-label="LinkedIn Pesaka" class="text-white text-decoration-none"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="mailto:info@pesaka.co.id" aria-label="Email Pesaka" class="text-white text-decoration-none"><i class="bi bi-envelope fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

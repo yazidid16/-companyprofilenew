@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Pesaka Loka Kirana (PLK) - Perusahaan Logistik Total Sejak 1968</title>
+    
+    <!-- Fonts: Inter, Playfair Display & Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         PRELOADER OVERLAY
+         ========================================== -->
+    <div id="veil" aria-hidden="true">
+        <div class="veil-inner text-center">
+            <img src="img/Asset 15.svg" alt="Pesaka Logo" style="filter: brightness(0) invert(1); height: 45px;" class="mb-3">
+            <div class="text-gold font-mono small" style="letter-spacing: 3px;">MEMUAT...</div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+
+   <!-- ==========================================
+         HEADER & NAVIGATION
+         ========================================== -->
+    <header class="fixed-top shadow-sm">
+        <!-- Tambahan py-3 agar navbar lebih tinggi dan lega -->
+        <nav class="navbar navbar-expand-lg navbar-modern py-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Pesaka Homepage">
+                    <img src="img/Asset 15.svg" alt="PT Pesaka Loka Kirana" height="45"> <!-- Ukuran logo sedikit dibesarkan -->
+                </a>
+                
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                    <ul class="navbar-nav align-items-lg-center gap-lg-3"> <!-- Tambahan gap biar menu tidak terlalu dempet -->
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Layanan
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#layanan">Tempat Penimbunan Sementara (TPS)</a></li>
+                                <li><a class="dropdown-item" href="#layanan">Gudang Umum</a></li>
+                            </ul>
+                        </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fasilitas
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#fasilitas">Fasilitas Info</a></li>
+                                <li><a class="dropdown-item" href="#jaringanstrategis">Jaringan Strategis</a></li>
+                                <li><a class="dropdown-item" href="#dokumentasi">Dokumentasi</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+                        <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
+                        
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="portal.html" class="btn btn-gold px-4 py-2 shadow-sm w-100">
+                                <i class="bi bi-box-arrow-in-right me-1"></i> Login Akses
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- ==========================================
+         MAIN CONTENT START
+         ========================================== -->
+    <main>
+
+        <!-- 1. HERO SECTION & TRACKING WIDGET -->
+        <section id="home" class="hero-section position-relative d-flex align-items-center justify-content-center flex-column text-center" style="min-height: calc(100vh - 70px); padding-bottom: 45px; background-color: var(--brand-dark);">
+            
+            <!-- Slider Background -->
+            <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100 z-0" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner w-100 h-100">
+                    <div class="carousel-item active w-100 h-100" data-bs-interval="4000"><img src="img/gambarho.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1"></div>
+                    <div class="carousel-item w-100 h-100" data-bs-interval="4000"><img src="img/arearak.png" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2"></div>
+                    <div class="carousel-item w-100 h-100" data-bs-interval="4000"><img src="img/gudangpu.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 3"></div>
+                    <div class="carousel-item w-100 h-100" data-bs-interval="4000"><img src="img/e-forklift.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 4"></div>
+                    <div class="carousel-item w-100 h-100" data-bs-interval="4000"><img src="img/gudangyos.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 5"></div>
+                    <div class="carousel-item w-100 h-100" data-bs-interval="4000"><img src="img/lapangan2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 6"></div> 
+                    <div class="carousel-item w-100 h-100" data-bs-interval="4000"><img src="img/lapangan3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 7"></div>
+                </div>
+                <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(rgba(36,22,20,0.8), rgba(36,22,20,0.95)); z-index: 1;"></div>
+            </div>
+
+            <div class="hero-watermark d-none d-md-block z-1">PESAKA</div>
+
+            <!-- Hero Content -->
+            <div class="container position-relative z-2 py-3">
+                <span class="badge-gold mb-2 font-mono">BERDIRI 1968 · JAKARTA · TANJUNG PRIOK</span>
+                <h1 class="hero-heading text-white font-serif fw-bold mb-4">Fasilitas TPS &<br>Gudang Umum<br>Terintegrasi.</h1>
+                
+                <!-- Tracking Form -->
+                <div class="tracking-widget mt-2 mx-auto p-3 p-md-4 rounded-4 shadow-lg text-start glass-panel">
+                    <h6 class="text-gold fw-bold mb-3 font-mono text-center text-md-start"><i class="bi bi-search"></i> LACAK KONTAINER / B/L</h6>
+                    <div class="input-group">
+                        <input type="text" id="inputContainer" class="form-control form-control-lg bg-light border-0 font-mono" placeholder="Masukkan Nomor...">
+                        <button class="btn btn-gold px-4 fw-bold font-sans" type="button" id="btnTrack">Cari</button>
+                    </div>
+                </div>
+
+                <!-- Info Grid -->
+                <div class="hero-manifest mt-5 d-none d-md-flex justify-content-center gap-5 text-start pt-3 border-top border-secondary">
+                    <div class="manifest-item">
+                        <div class="text-gold font-mono small mb-1">BERDIRI</div>
+                        <div class="text-white fs-4 fw-bold font-serif">1968</div>
+                    </div>
+                    <div class="manifest-item">
+                        <div class="text-gold font-mono small mb-1">KE PELABUHAN</div>
+                        <div class="text-white fs-4 fw-bold font-serif">5 <span class="fs-6">MNT</span></div>
+                    </div>
+                    <div class="manifest-item">
+                        <div class="text-gold font-mono small mb-1">FASILITAS</div>
+                        <div class="text-white fs-4 fw-bold font-serif">41.000 <span class="fs-6">M²</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marquee Info -->
+            <div class="hero-text-marquee z-2">
+                <div class="track font-mono">
+                    <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> Tj. Priok - Jakarta Utara</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-telephone-fill text-gold me-1"></i> +6221-430-0588</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-envelope-fill text-gold me-1"></i> info@pesaka.co.id</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-clock-fill text-gold me-1"></i> 08:00 - 17:00 WIB</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-geo-alt-fill text-gold me-1"></i> Tj. Priok - Jakarta Utara</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-telephone-fill text-gold me-1"></i> +6221-430-0588</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-envelope-fill text-gold me-1"></i> info@pesaka.co.id</span> <span class="dot">◆</span>
+                    <span><i class="bi bi-clock-fill text-gold me-1"></i> 08:00 - 17:00 WIB</span> <span class="dot">◆</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 2. PROFIL PERUSAHAAN -->
+        <section id="profil" class="container mt-5 pt-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative rounded-4 overflow-hidden shadow-lg" style="height: 400px;">
+                        <img src="img/gambarho.jpg" alt="Fasilitas Pesaka" class="w-100 h-100 object-fit-cover hover-zoom">
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <span class="badge-gold mb-2 font-mono small text-uppercase">Welcome to</span>
+                    <h2 class="display-5 fw-bold color-brand font-serif mb-4">PT. Pesaka Loka Kirana</h2>
+                    
+                    <ul class="nav nav-pills mb-4 gap-2" id="profil-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold btn-custom-tab" id="tentang-tab" data-bs-toggle="pill" data-bs-target="#tentang" type="button" role="tab">Tentang Kami</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold btn-custom-tab" id="latar-tab" data-bs-toggle="pill" data-bs-target="#latar" type="button" role="tab">Latar Belakang</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold btn-custom-tab" id="visi-tab" data-bs-toggle="pill" data-bs-target="#visi" type="button" role="tab">Visi Misi</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content bg-light p-4 rounded-4 shadow-sm border-start border-4" style="border-color: var(--gold-primary) !important;" id="profil-content">
+                        <div class="tab-pane fade show active" id="tentang" role="tabpanel">
+                            <p class="text-muted m-0" style="line-height: 1.8;">
+                                PT. Pesaka Loka Kirana merupakan perusahaan yang bergerak di bidang Tempat Penimbunan Sementara (TPS), pergudangan, penyewaan gudang, dan jasa logistik terpadu di Indonesia. Kami menyediakan layanan penyimpanan barang impor maupun ekspor secara profesional.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="latar" role="tabpanel">
+                            <p class="text-muted m-0" style="line-height: 1.8;">
+                                Dengan lokasi strategis yang berdekatan dengan kawasan Pelabuhan Tanjung Priok dan berbekal pengalaman sejak 1968, kami terus berkembang sebagai mitra terpercaya. Kami memastikan setiap rantai distribusi logistik pelanggan berjalan aman, efisien, dan tepat waktu.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="visi" role="tabpanel">
+                            <h6 class="fw-bold color-brand mb-2">Visi</h6>
+                            <p class="text-muted small mb-3">Menjadi katalis transformasi maju dalam ekosistem logistik melalui kemitraan yang andal, inovasi teknologi, dan keunggulan operasional.</p>
+                            <h6 class="fw-bold color-brand mb-2">Misi</h6>
+                            <ul class="text-muted small m-0 ps-3">
+                                <li>Menyediakan layanan logistik terpadu melalui solusi cerdas yang aman, efisien, dan hemat biaya</li>
+                                <li>Mendorong perbaikan berkelanjutan dan inovasi menuju keunggulan layanan dan operasional melalui inovasi berbasis teknologi dan kerja sama tim yang solid</li>
+                                <li>Membangun kemitraan jangka panjang yang berlandaskan integritas, tanggung jawab, dan pertumbuhan bersama</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. KEBIJAKAN MUTU 5K -->
+        <section class="bg-light py-5">
+            <div class="container my-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold color-brand font-serif">Kebijakan Mutu <span class="text-gold">5K</span></h2>
+                    <p class="text-muted">Prinsip kerja pelayanan PT. Pesaka Loka Kirana:</p>
+                </div>
+                
+                <div class="row g-3 g-md-4 justify-content-center text-center">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="mutu-card bg-white p-3 p-md-4 rounded-4 shadow-sm h-100">
+                            <div class="text-gold display-5 fw-bold mb-2 font-serif">01</div>
+                            <h6 class="color-brand fw-bold m-0 font-serif">Kejujuran</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="mutu-card bg-white p-3 p-md-4 rounded-4 shadow-sm h-100">
+                            <div class="text-gold display-5 fw-bold mb-2 font-serif">02</div>
+                            <h6 class="color-brand fw-bold m-0 font-serif">Komitmen</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="mutu-card bg-white p-3 p-md-4 rounded-4 shadow-sm h-100">
+                            <div class="text-gold display-5 fw-bold mb-2 font-serif">03</div>
+                            <h6 class="color-brand fw-bold m-0 font-serif">Kesiapan</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="mutu-card bg-white p-3 p-md-4 rounded-4 shadow-sm h-100">
+                            <div class="text-gold display-5 fw-bold mb-2 font-serif">04</div>
+                            <h6 class="color-brand fw-bold m-0 font-serif">Ketelitian</h6>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <div class="mutu-card bg-white p-3 p-md-4 rounded-4 shadow-sm h-100">
+                            <div class="text-gold display-5 fw-bold mb-2 font-serif">05</div>
+                            <h6 class="color-brand fw-bold m-0 font-serif">Ketepatan</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- 4. CERTIFICATES (ISO) -->
+        <section class="certificate-section py-5 text-center bg-light border-top">
+            <div class="container">
+                <h3 class="fw-bold color-brand font-serif text-uppercase" style="letter-spacing: 2px;">Sertfikat</h3>
+                <div class="mx-auto my-3" style="width: 50px; height: 3px; background-color: var(--brand-dark); border-radius: 2px;"></div>
+                <p class="text-muted mx-auto mb-4" style="max-width: 600px; font-size: 0.95rem;">
+                    PT. Pesaka Loka Kirana secara resmi tersertifikasi dengan standar kualitas dan kepabeanan internasional.
+                </p>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="img/ISO_9001-2015.svg" alt="ISO 9001:2015" style="height: 100px; object-fit: contain;" class="mb-2">
+                    <span class="fw-bold color-brand small font-mono">ISO 9001:2015 Certified</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. LAYANAN UTAMA PESAKA -->
+        <section id="layanan" class="py-5 my-5 bg-brand text-white">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="badge-gold mb-2 font-mono small text-uppercase">Core Services</span>
+                    <h2 class="display-6 fw-bold font-serif text-white">Layanan Utama Pesaka</h2>
+                    <p class="text-white-50 mx-auto" style="max-width: 600px;">
+                        Infrastruktur dan fasilitas berlisensi di bawah satu atap untuk kelancaran rantai pasok logistik Anda.
+                    </p>
+                </div>
+                
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="service-card shadow-lg h-100 p-5 rounded-4 bg-white hover-zoom d-flex flex-column" style="border-top: 4px solid var(--gold-primary);">
+                            <div class="mb-4"><i class="bi bi-box-seam text-gold display-4"></i></div>
+                            <h4 class="fw-bold color-brand font-serif mb-3">Tempat Penimbunan Sementara (TPS)</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height: 1.8;">Inland Clearance Depot berlisensi untuk penerimaan dan penumpukan sementara kontainer ekspor-impor dari area pelabuhan Tj. Priok.</p>
+                            <a href="#" class="btn btn-outline-brand mt-3 w-100 rounded-pill fw-bold font-mono"> Detail Layanan <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="service-card shadow-lg h-100 p-5 rounded-4 bg-white hover-zoom d-flex flex-column" style="border-top: 4px solid var(--brand-accent);">
+                            <div class="mb-4"><i class="bi bi-buildings color-brand display-4"></i></div>
+                            <h4 class="fw-bold color-brand font-serif mb-3">Gudang Umum</h4>
+                            <p class="text-muted small flex-grow-1" style="line-height: 1.8;">Penyewaan gudang dengan sistem manajemen modern untuk penyimpanan barang yang aman, efisien, dan siap mendukung rantai distribusi Anda.</p>
+                            <a href="#" class="btn btn-outline-brand mt-3 w-100 rounded-pill fw-bold font-mono"> Detail Layanan <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. FASILITAS INFO (TABS SYSTEM) -->
+        <section id="fasilitas" class="py-5 my-5 bg-light border-top">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold color-brand font-serif">Fasilitas Info</h2>
+                    <p class="text-muted">Pilih lokasi fasilitas untuk melihat rincian spesifikasi teknis dan infrastruktur kami.</p>
+                    
+                    <ul class="nav nav-pills justify-content-center mt-4 gap-2" id="lokasi-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold btn-custom-tab-dark px-4 rounded-pill" id="tps-tab" data-bs-toggle="pill" data-bs-target="#tab-tps" type="button" role="tab">Tempat Penimpunan Sementara (TPS)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold btn-custom-tab-dark px-4 rounded-pill" id="gudang1-tab" data-bs-toggle="pill" data-bs-target="#tab-gudang1" type="button" role="tab">Gudang Umum (Yos Sudarso-Priok)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold btn-custom-tab-dark px-4 rounded-pill" id="gudang2-tab" data-bs-toggle="pill" data-bs-target="#tab-gudang2" type="button" role="tab">Gudang Umum (PU-Bekasi)</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="lokasi-content">
+                    <!-- TPS Details -->
+                    <div class="tab-pane fade show active" id="tab-tps" role="tabpanel">
+                        <ul class="nav nav-tabs justify-content-center mb-4 border-0 gap-3" id="tps-segmen-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bold text-muted border-0 pb-3 custom-bottom-border" id="tps-building-tab" data-bs-toggle="tab" data-bs-target="#tps-building" type="button" role="tab">Building & Keamanan</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold text-muted border-0 pb-3 custom-bottom-border" id="tps-yard-tab" data-bs-toggle="tab" data-bs-target="#tps-yard" type="button" role="tab">Container Yard (CY)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold text-muted border-0 pb-3 custom-bottom-border" id="tps-equip-tab" data-bs-toggle="tab" data-bs-target="#tps-equip" type="button" role="tab">Equipment</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- Building -->
+                            <div class="tab-pane fade show active" id="tps-building" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-6">
+                                        <h4 class="fw-bold color-brand font-serif mb-3">Building & Keamanan Info</h4>
+                                        <ul class="list-unstyled text-muted" style="line-height: 2;">
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Warehouse Area:</strong> 2.880 m² (Kapasitas 3.114 m³)</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Kargo DRY:</strong> 3.014 m³ | <strong>Kargo DG:</strong> 100 m³</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Indoor Racking:</strong> 14 Unit (Gate 10-24)</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Total CCTV:</strong> 43 Unit Terintegrasi</li>
+                                            <li class="ps-4 small text-secondary">- Gudang: 26 Unit</li>
+                                            <li class="ps-4 small text-secondary">- Lapangan: 8 Unit (Gate in/out, Rotary, Tower)</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Total APAR:</strong> 26 Unit (Dry Chem & CO2)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row g-2">
+                                            <div class="col-12 mb-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/arearak.png'">
+                                                    <img src="img/arearak.png" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 200px;" alt="Building 1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/monitoringcctv.png'">
+                                                    <img src="img/monitoringcctv.png" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 120px;" alt="Building 2">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/realasearea.jpg'">
+                                                    <img src="img/realasearea.jpg" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 120px;" alt="Building 3">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Yard -->
+                            <div class="tab-pane fade" id="tps-yard" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-6">
+                                        <h4 class="fw-bold color-brand font-serif mb-3">Container Yard (CY)</h4>
+                                        <ul class="list-unstyled text-muted" style="line-height: 2;">
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Stacking Area:</strong> 6.093 m²</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>TEUs Capacity:</strong> 411 TEUs Total</li>
+                                            <li class="ps-4 small text-secondary">- DRY Container: 399 TEUs</li>
+                                            <li class="ps-4 small text-secondary">- DG Container (Dangerous Goods): 72 TEUs</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Behandle Area:</strong> 2 Gate (Gate 4) + 1 Rotary</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Stripping Area:</strong> 4 Titik Operasional</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Release Area:</strong> 6 Titik (Gate 1-3)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row g-2">
+                                            <div class="col-12 mb-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/lapangan2.jpg'">
+                                                    <img src="img/lapangan2.jpg" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 200px;" alt="Yard 1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/lapangan1.jpg'">
+                                                    <img src="img/lapangan1.jpg" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 120px;" alt="Yard 2">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/lapangan3.jpg'">
+                                                    <img src="img/lapangan3.jpg" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 120px;" alt="Yard 3">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Equipment -->
+                            <div class="tab-pane fade" id="tps-equip" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-6">
+                                        <h4 class="fw-bold color-brand font-serif mb-3">Alat Berat & Equipment</h4>
+                                        <ul class="list-unstyled text-muted" style="line-height: 2;">
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Container Reach Stacker:</strong> 1 Unit</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Forklift Lapangan 5 Ton:</strong> 1 Unit</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Forklift Lapangan 2.5 Ton:</strong> 4 Unit</li>
+                                            <li><i class="bi bi-check-circle-fill text-gold me-2"></i><strong>Forklift Reach Truck 2.5 Ton:</strong> 3 Unit</li>
+                                        </ul>
+                                        <p class="text-secondary small mt-3">* Seluruh unit alat berat kami dioperasikan oleh tenaga ahli bersertifikat dan melalui proses maintanance berkala.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row g-2">
+                                            <div class="col-12 mb-2">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/sanyreachstacker.png'">
+                                                    <img src="img/sanyreachstacker.png" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 200px;" alt="Equipment 1">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/e-forklift.jpg'">
+                                                    <img src="img/e-forklift.jpg" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 120px;" alt="Equipment 2">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src='img/stripingarea.jpg'">
+                                                    <img src="img/stripingarea.jpg" class="w-100 rounded-3 shadow-sm object-fit-cover hover-zoom" style="height: 120px;" alt="Equipment 3">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Gudang Yos Sudarso -->
+                    <div class="tab-pane fade" id="tab-gudang1" role="tabpanel">
+                        <div class="text-center py-5">
+                            <i class="bi bi-tools text-muted mb-3" style="font-size: 3rem;"></i>
+                            <h4 class="fw-bold color-brand font-serif">Data Spesifikasi Sedang Diperbarui</h4>
+                            <p class="text-muted">Informasi detail mengenai fasilitas Gudang Umum Yos Sudarso akan segera hadir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Gudang Bekasi -->
+                    <div class="tab-pane fade" id="tab-gudang2" role="tabpanel">
+                        <div class="text-center py-5">
+                            <i class="bi bi-tools text-muted mb-3" style="font-size: 3rem;"></i>
+                            <h4 class="fw-bold color-brand font-serif">Data Spesifikasi Sedang Diperbarui</h4>
+                            <p class="text-muted">Informasi detail mengenai fasilitas Gudang Umum Bekasi akan segera hadir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- 7. JARINGAN STRATEGIS -->
+        <section id="jaringanstrategis" class="container my-5 py-5 border-top">
+            <div class="row align-items-center mb-5 text-center text-lg-start">
+                <div class="col-lg-8">
+                    <h2 class="display-6 fw-bold color-brand font-serif">Jaringan Strategis</h2>
+                </div>
+                <div class="col-lg-4 text-muted">
+                    Lokasi-Lokasi operasional dan pergudangan kami.
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-4 border-start border-4 h-100" style="border-color: var(--gold-primary) !important;">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <i class="bi bi-building-fill text-gold fs-3"></i>
+                            <h4 class="fw-bold color-brand m-0 font-serif">Head Office (HO)</h4>
+                        </div>
+                        <p class="text-muted m-0 mt-2 small" style="line-height: 1.6;">Jl. Plumpang Semper No.23, RT.1/RW.12, Tugu Utara, Kec. Koja, Jkt Utara, DKI Jakarta 14260</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-4 border-start border-4 h-100" style="border-color: var(--gold-primary) !important;">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <i class="bi bi-box-seam-fill text-gold fs-3"></i>
+                            <h4 class="fw-bold color-brand m-0 font-serif">Fasilitas TPS</h4>
+                        </div>
+                        <p class="text-muted m-0 mt-2 small" style="line-height: 1.6;">Jl. Bangka No.1, RT.7/RW.16, Tj. Priok, Kec. Tj. Priok, Jkt Utara, DKI Jakarta 14310</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-4 border-start border-4 h-100" style="border-color: var(--gold-primary) !important;">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <i class="bi bi-boxes text-gold fs-3"></i>
+                            <h4 class="fw-bold color-brand m-0 font-serif">Gudang Umum Yos Sudarso</h4>
+                        </div>
+                        <p class="text-muted m-0 mt-2 small" style="line-height: 1.6;">Jl. Laks Yos Sudarso No.13, RT.5/RW.14, Rawabadak Utara, Kec. Koja, Jkt Utara, DKI Jakarta</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-light rounded-4 border-start border-4 h-100" style="border-color: var(--gold-primary) !important;">
+                        <div class="d-flex align-items-center gap-3 mb-2">
+                            <i class="bi bi-truck text-gold fs-3"></i>
+                            <h4 class="fw-bold color-brand m-0 font-serif">Gudang Umum Bekasi</h4>
+                        </div>
+                        <p class="text-muted m-0 mt-2 small" style="line-height: 1.6;">Jl. Sultan Agung Km 27, RT.002/RW.017, Pejuang, Kec. Medan Satria, Kota Bekasi, Jawa Barat 17131</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. GALERI FASILITAS PESAKA -->
+        <section id="dokumentasi" class="container my-5 py-5">
+            <div class="row align-items-end mb-4 text-center text-md-start">
+                <div class="col-lg-8">
+                    <span class="badge-gold mb-2 font-mono">Dokumentasi</span>
+                    <h2 class="display-6 fw-bold color-brand font-serif">Fasilitas & Armada</h2>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="img/arearak.png" alt="Fasilitas 1" class="w-100 h-100 object-fit-cover hover-zoom">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="img/behandlein.jpg" alt="Fasilitas 2" class="w-100 h-100 object-fit-cover hover-zoom">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="img/stripingarea.jpg" alt="Fasilitas 2" class="w-100 h-100 object-fit-cover hover-zoom">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="img/e-forklift.jpg" alt="Fasilitas 2" class="w-100 h-100 object-fit-cover hover-zoom">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 200px;">
+                        <img src="img/gudangyos.jpg" alt="Fasilitas 2" class="w-100 h-100 object-fit-cover hover-zoom">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="rounded-4 overflow-hidden shadow-sm bg-brand" style="height: 200px;">
+                        <a href="gallery.html" class="w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-decoration-none gallery-btn">
+                            <i class="bi bi-camera fs-1 text-gold mb-2"></i>
+                            <h5 class="fw-bold m-0 font-serif">Lihat Semua</h5>
+                            <p class="text-white-50 m-0 font-mono small mt-1">12 Foto</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. BERITA & ARTIKEL (NEWS) -->
+        <section id="berita" class="bg-light py-5 border-top">
+            <div class="container py-4">
+                <div class="d-flex justify-content-between align-items-end mb-5">
+                    <div>
+                        <span class="badge-gold mb-2 font-mono small text-uppercase">Update Terbaru</span>
+                        <h2 class="display-6 fw-bold color-brand font-serif m-0">Berita & Informasi</h2>
+                    </div>
+                    <a href="berita.html" class="btn btn-outline-gold px-4 rounded-pill font-mono d-none d-md-inline-flex align-items-center">Lihat Semua <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-zoom">
+                            <img src="img/Banner1.jpg" class="card-img-top object-fit-cover" alt="Berita 1" style="height: 220px;">
+                            <div class="card-body p-4">
+                                <span class="text-gold font-mono small mb-2 d-block">10 Sep 2026</span>
+                                <h5 class="fw-bold color-brand font-serif mb-3">Digitalisasi Sistem WMS di Gudang Pesaka</h5>
+                                <p class="text-muted small">Peningkatan efisiensi distribusi logistik melalui penerapan sistem Warehouse Management System (WMS) terbaru untuk pelanggan setia kami...</p>
+                                <a href="berita-detail.html" class="text-decoration-none fw-bold color-brand small border-bottom pb-1" style="border-color: var(--gold-primary) !important;">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-zoom">
+                            <img src="img/Banner1.jpg" class="card-img-top object-fit-cover" alt="Berita 2" style="height: 220px;">
+                            <div class="card-body p-4">
+                                <span class="text-gold font-mono small mb-2 d-block">02 Sep 2026</span>
+                                <h5 class="fw-bold color-brand font-serif mb-3">Perpanjangan Lisensi TPS dan Keamanan Berstandar ISO</h5>
+                                <p class="text-muted small">PT. Pesaka Loka Kirana berhasil mempertahankan sertifikasi ISO 9001:2015, memastikan mutu layanan tetap berada di standar internasional...</p>
+                                <a href="berita-detail.html" class="text-decoration-none fw-bold color-brand small border-bottom pb-1" style="border-color: var(--gold-primary) !important;">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-zoom">
+                            <img src="img/Banner1.jpg" class="card-img-top object-fit-cover" alt="Berita 3" style="height: 220px;">
+                            <div class="card-body p-4">
+                                <span class="text-gold font-mono small mb-2 d-block">15 Agu 2026</span>
+                                <h5 class="fw-bold color-brand font-serif mb-3">Optimalisasi Jaringan Gudang Umum Area Bekasi</h5>
+                                <p class="text-muted small">Kami telah mengoptimalkan kapasitas operasional Gudang Umum di area Bekasi untuk menunjang kebutuhan distribusi yang semakin meningkat...</p>
+                                <a href="berita-detail.html" class="text-decoration-none fw-bold color-brand small border-bottom pb-1" style="border-color: var(--gold-primary) !important;">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4 d-md-none">
+                     <a href="berita.html" class="btn btn-outline-gold px-4 w-100 rounded-pill font-mono">Lihat Semua Berita</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- END MAIN CONTENT -->
+
+        <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-section mt-auto">
+        <div class="container pb-4">
+            <div class="row g-4 mb-5">
+                
+                <!-- Kolom 1: Logo & Alamat -->
+                <div class="col-lg-4 pe-lg-5">
+                    <img src="img/Logo Landscape White.svg" alt="Pesaka Logo" height="40" class="mb-4 d-block" style="filter: brightness(0) invert(1);">
+                    <h6 class="text-white fw-bold font-sans mb-3" style="font-size: 0.95rem;">Alamat</h6>
+                    <p class="text-white-50 small mb-0 lh-lg font-sans">
+                        Kantor HO Pesaka Loka Kirana<br>
+                        Jl. Plumpang Semper No.23, RT.1/RW.12, Tugu Utara,<br>
+                        Kec. Koja, Jakarta Utara, Indonesia 14260<br>
+                        Telp: (021) 4300588
+                    </p>
+                </div>
+                
+                <!-- Kolom 2: Perusahaan -->
+                <div class="col-lg-2 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Perusahaan</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="#profil" class="text-white text-decoration-none fw-semibold">Profil Perusahaan</a></li>
+                        <li class="mb-3"><a href="#fasilitas" class="text-white text-decoration-none fw-semibold">Jaringan Strategis</a></li>
+                        <li class="mb-3"><a href="karir.html" class="text-white text-decoration-none fw-semibold">Karir</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Layanan Utama -->
+                <div class="col-lg-3 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Layanan Utama</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="#layanan" class="text-white text-decoration-none fw-semibold">Tempat Penimbunan Sementara</a></li>
+                        <li class="mb-3"><a href="#layanan" class="text-white text-decoration-none fw-semibold">Gudang Umum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 4: Tautan Lainnya -->
+                <div class="col-lg-3 col-md-4 mt-5 mt-lg-0">
+                    <h6 class="text-white-50 mb-4 font-sans" style="font-size: 0.85rem;">Tautan Lainnya</h6>
+                    <ul class="list-unstyled font-sans footer-links">
+                        <li class="mb-3"><a href="portal.html" class="text-white text-decoration-none fw-semibold">Portal Akses Terpadu</a></li>
+                        <li class="mb-3"><a href="#berita" class="text-white text-decoration-none fw-semibold">Berita & Informasi</a></li>
+                        <li class="mb-3"><a href="#" class="text-white text-decoration-none fw-semibold">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bagian Bawah: Copyright & Social Media -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-secondary pt-4 text-white-50 font-sans footer-bottom">
+                <div class="mb-3 mb-md-0">
+                    <small>&copy; 2026 PT Pesaka Loka Kirana.</small>
+                </div>
+                <div class="d-flex gap-4 social-icons">
+                    <a href="#" aria-label="Instagram Pesaka" class="text-white text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" aria-label="LinkedIn Pesaka" class="text-white text-decoration-none"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="mailto:info@pesaka.co.id" aria-label="Email Pesaka" class="text-white text-decoration-none"><i class="bi bi-envelope fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- ==========================================
+         FLOATING ELEMENTS (DOT NAV)
+         ========================================== -->
+    <div class="dot-navigation d-none d-lg-flex flex-column gap-2 align-items-center">
+        <a href="#home" class="dot-link" title="Home"></a>
+        <a href="#profil" class="dot-link" title="Profil"></a>
+        <a href="#layanan" class="dot-link" title="Layanan"></a>
+        <a href="#fasilitas" class="dot-link" title="Jaringan"></a>
+        <a href="#berita" class="dot-link" title="berita"></a>
+
+    </div>
+
+    <!-- ==========================================
+         MODALS (POP-UPS)
+         ========================================== -->
+    <!-- 1. Tracking Modal -->
+    <div class="modal fade" id="trackingModal" tabindex="-1" aria-labelledby="trackingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header border-bottom bg-white rounded-top-4 py-3 px-4">
+                    <h5 class="modal-title font-serif fw-bold color-brand" id="trackingModalLabel">
+                        <i class="bi bi-box-seam text-gold me-2"></i>Status Kontainer
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4 px-4">
+                    <p class="text-muted mb-1 small">Hasil pencarian untuk nomor:</p>
+                    <h3 id="showContainerNumber" class="font-mono fw-bold color-brand mb-4"></h3>
+                    <div class="d-inline-flex justify-content-center align-items-center gap-2 mb-4 px-4 py-2 rounded-pill shadow-sm" style="background-color: #111;">
+                        <span class="spinner-grow spinner-grow-sm text-gold" aria-hidden="true"></span>
+                        <h4 class="m-0 fw-bold text-gold font-serif" style="letter-spacing: 1px;">ARRIVED</h4>
+                    </div>
+                    <div class="p-3 rounded-3 text-start" style="background-color: rgba(196, 154, 68, 0.1); border: 1px solid rgba(196, 154, 68, 0.3);">
+                        <p class="color-brand small m-0" style="line-height: 1.6;">
+                            <i class="bi bi-info-circle-fill text-gold me-1"></i> Kontainer telah tiba di fasilitas TPS Pesaka. Untuk melihat rincian dokumen (B/L, HBL), silakan login ke portal.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0 justify-content-center pb-4 px-4 pt-1">
+                    <a href="portal.html" class="btn btn-gold rounded-pill px-4 py-2 fw-bold w-100">Login untuk Detail Lengkap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Image Lightbox Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0 shadow-none">
+                <div class="modal-header border-0 pb-0 justify-content-end position-absolute top-0 end-0 z-3 p-3">
+                    <button type="button" class="btn-close btn-close-white shadow-sm" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 12px;" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0 position-relative">
+                    <img id="modalImage" src="" class="img-fluid rounded-4 shadow-lg w-100" alt="Preview Gambar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Cookies Consent Popup -->
+    <div id="cookiePopup" class="cookie-popup shadow-lg rounded-4 p-4 bg-white">
+        <div class="d-flex align-items-start gap-3">
+            <i class="bi bi-info-circle-fill text-gold fs-3"></i>
+            <div>
+                <h6 class="fw-bold color-brand font-serif mb-1">Pengaturan Cookies</h6>
+                <p class="text-muted small mb-3" style="line-height: 1.5;">Situs ini menggunakan cookies untuk meningkatkan pengalaman penelusuran Anda. Dengan melanjutkan, Anda menyetujui kebijakan privasi kami.</p>
+                <button id="btnAcceptCookies" class="btn bg-brand text-white btn-sm px-4 rounded-pill font-mono">Saya Mengerti</button>
+            </div>
+        </div>
+    </div>
+    <!-- END MODALS -->
+    <!-- ==========================================
+         TOMBO KEMBALI KE ATAS (BACK TO TOP)
+         ========================================== -->
+    <a href="#home" id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    
+    <!-- ==========================================
+         SCRIPTS
+         ========================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>

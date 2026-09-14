@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #8d0720;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        font-family: SofiaSans-ExtraBold, 'Sofia Sans';
+        font-size: 66.82px;
+        font-variation-settings: 'wght' 800;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        letter-spacing: -.11em;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M420.53,414.9l-25.67-109.93-106.33,25.09c-3.84.77-6.97,1.76-10.83,1.11l89.97-77.45-92.71-76.12,95.86,19.75,23.51,4.79,27.62-117.8,27.65,118.08,117.35-28.63-92.01,79.12,77.33,64.18c4.55,4.53,10.03,7.2,13.38,13.12l-116.16-27.39-25.94,112.65c-.11.49-1.17,2.06-1.51,1.77s-1.21-1.08-1.5-2.34ZM422.37,243.71l17.09-37.26-16.09-78.11c-.92,2.94-.99,5.63-1.11,8.96l.12,106.41ZM387.74,216.43l-77.13-22.24,101.46,52.48-24.33-30.25ZM472.42,243.87l62.26-50.66-102.23,54.19,39.97-3.52ZM533.7,313.92l-101.71-54.21,24.42,30.98,77.29,23.23ZM323.63,307.36l53.18-28.96c10.4-5.67,20.11-10.67,30.53-17.23l-38.56,3.33-62.53,51.05c6.2-1.65,11.4-4.92,17.38-8.18ZM421.24,380.36l.76-26.66-.17-88.58-15.66,36.37,15.08,78.87Z"/>
+  <text class="cls-6" transform="translate(43.73 494.71)"><tspan x="0" y="0">P</tspan><tspan class="cls-7" x="37.89" y="0">T</tspan><tspan x="67.62" y="0">. MU</tspan><tspan class="cls-3" x="196.91" y="0">L</tspan><tspan x="224.31" y="0">TI BIN</tspan><tspan class="cls-4" x="396.03" y="0">T</tspan><tspan class="cls-1" x="428.97" y="0">ANG A</tspan><tspan class="cls-5" x="612.38" y="0">B</tspan><tspan x="652" y="0">ADI</tspan></text>
+</svg>

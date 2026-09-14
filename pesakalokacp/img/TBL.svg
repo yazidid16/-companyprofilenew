@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3291ff;
+      }
+
+      .cls-2 {
+        fill: #e62129;
+      }
+
+      .cls-3 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-4 {
+        font-family: TimesNewRomanPS-BoldMT, 'Times New Roman';
+        font-size: 44.01px;
+        font-weight: 700;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #0000fe;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #231d1d;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #231d1d;
+      }
+
+      .cls-8 {
+        letter-spacing: -.07em;
+      }
+    </style>
+  </defs>
+  <g id="TBL">
+    <g>
+      <polygon class="cls-2" points="419.79 32 446.49 86.1 506.2 94.78 462.99 136.89 473.19 196.36 419.79 168.28 366.39 196.36 376.58 136.89 333.38 94.78 393.09 86.1 419.79 32"/>
+      <polygon class="cls-6" points="533.43 168.31 560.13 222.41 619.84 231.09 576.63 273.2 586.83 332.67 533.43 304.59 480.03 332.67 490.23 273.2 447.02 231.09 506.73 222.41 533.43 168.31"/>
+      <polygon class="cls-1" points="308.46 168.31 335.16 222.41 394.87 231.09 351.66 273.2 361.86 332.67 308.46 304.59 255.06 332.67 265.26 273.2 222.05 231.09 281.76 222.41 308.46 168.31"/>
+    </g>
+    <g>
+      <polygon class="cls-5" points="454.08 401.87 556.57 363.3 565.38 394.16 663.46 387.55 541.14 427.22 527.91 395.26 454.08 401.87"/>
+      <polygon class="cls-7" points="427.03 456.89 525.37 408.72 537.08 438.59 634.08 422.65 516.11 473.81 499.89 443.26 427.03 456.89"/>
+      <polygon class="cls-5" points="205.48 401.87 307.97 363.3 316.78 394.16 414.86 387.55 292.54 427.22 279.32 395.26 205.48 401.87"/>
+      <polygon class="cls-7" points="178.43 456.89 276.77 408.72 288.49 438.59 385.49 422.65 267.51 473.81 251.3 443.26 178.43 456.89"/>
+    </g>
+    <text class="cls-4" transform="translate(178.43 548.86)"><tspan x="0" y="0">TRI BIN</tspan><tspan class="cls-8" x="167.54" y="0">T</tspan><tspan x="193.63" y="0">ANG LAU</tspan><tspan class="cls-3" x="395.37" y="0">T</tspan><tspan x="421.46" y="0">AN</tspan></text>
+  </g>
+</svg>

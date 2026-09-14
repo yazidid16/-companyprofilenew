@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pendaftaran Akun Customer PT. Pesaka Loka Kirana.">
+    <title>Daftar Customer - PT. Pesaka Loka Kirana</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="position-relative d-flex align-items-center justify-content-center" style="min-height: 100vh; overflow-x: hidden;">
+
+    <!-- Background Foto Gudang -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 z-0">
+        <img src="img/gambarho.jpg" alt="Fasilitas Pesaka" class="w-100 h-100 object-fit-cover">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(rgba(36,22,20,0.85), rgba(36,22,20,0.95));"></div>
+    </div>
+
+    <main class="container position-relative z-2 py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                
+                <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white text-start">
+                    
+                    <div class="text-center mb-4">
+                        <a href="index.html" class="d-inline-block hover-zoom mb-3">
+                            <img src="img/Asset 15.svg" alt="Pesaka Logo" height="42">
+                        </a>
+                        <h1 class="h4 fw-bold color-brand font-serif mb-1">Registrasi Customer</h1>
+                        <p class="text-muted small">Dapatkan akses pelacakan kontainer dan dokumen B/L</p>
+                    </div>
+
+                    <!-- Form Pendaftaran -->
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold color-brand font-mono">Nama Lengkap *</label>
+                            <input type="text" id="regName" class="form-control bg-light border-0 py-2 font-mono" placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold color-brand font-mono">Nomor HP / WhatsApp *</label>
+                                <input type="tel" id="regPhone" class="form-control bg-light border-0 py-2 font-mono" placeholder="08xxxxxxxxxx" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small fw-bold color-brand font-mono">Email Perusahaan/Pribadi *</label>
+                                <input type="email" id="regEmail" class="form-control bg-light border-0 py-2 font-mono" placeholder="nama@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold color-brand font-mono">Nama PT / Utusan PT *</label>
+                            <input type="text" id="regCompany" class="form-control bg-light border-0 py-2 font-mono" placeholder="PT. Nama Perusahaan Tbk" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold w-100 py-3 rounded-3 fw-bold font-sans shadow-sm mb-3">Daftar Sekarang</button>
+                    </form>
+
+                    <hr class="text-secondary opacity-25 my-3">
+
+                    <div class="text-center">
+                        <p class="text-muted small mb-2">Sudah memiliki akun?</p>
+                        <a href="login-customer.html" class="text-decoration-none fw-bold color-brand small font-mono">Login di sini <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+
+                <footer class="text-center mt-4">
+                    <p class="text-white-50 small font-mono m-0" style="font-size: 0.75rem;">&copy; 2026 PT Pesaka Loka Kirana. All Rights Reserved.</p>
+                    <a href="portal.html" class="text-white-50 text-decoration-none small font-mono mt-1 d-inline-block" style="font-size: 0.75rem;"><i class="bi bi-arrow-left"></i> Kembali ke Portal Akses</a>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- MODAL ALERT BERHASIL DAFTAR & MENUNGGU VERIFIKASI ADMIN -->
+    <div class="modal fade" id="successRegisterModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow-lg text-center p-4">
+                <div class="modal-body py-4">
+                    <div class="mb-3 text-gold" style="font-size: 3.5rem;">
+                        <i class="bi bi-hourglass-split"></i>
+                    </div>
+                    <h3 class="font-serif fw-bold color-brand mb-3">Pendaftaran Berhasil!</h3>
+                    <p class="text-muted small lh-lg mb-4">
+                        Terima kasih telah mendaftar. Data akun Anda telah dikirimkan ke sistem. Saat ini akun Anda <strong class="text-dark">sedang menunggu proses verifikasi data atau akun oleh admin</strong> sebelum dapat digunakan untuk login.
+                    </p>
+                    <a href="login-customer.html" class="btn btn-gold rounded-pill px-4 py-2 fw-bold w-100 font-mono">Mengerti & Kembali ke Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Trigger Alert Modal saat Register -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const registerForm = document.getElementById("registerForm");
+            const successModalEl = document.getElementById("successRegisterModal");
+
+            if(registerForm) {
+                registerForm.addEventListener("submit", function(e) {
+                    e.preventDefault(); // Mencegah reload halaman
+                    
+                    // Tampilkan modal alert verifikasi admin
+                    const modal = new bootstrap.Modal(successModalEl);
+                    modal.show();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

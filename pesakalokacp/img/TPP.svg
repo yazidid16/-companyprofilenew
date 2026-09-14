@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #dab544;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8, .cls-9 {
+        fill: #09a215;
+      }
+
+      .cls-9 {
+        font-family: AcuminConcept-ExtraCondBlack, 'Acumin Variable Concept';
+        font-size: 52.74px;
+        font-variation-settings: 'wght' 800, 'wdth' 50, 'slnt' 0;
+        font-weight: 800;
+      }
+
+      .cls-10 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="TPP">
+    <g>
+      <path class="cls-8" d="M347.88,144.07v326.32s-21.93-7.83-37.07-22.97v-140.19s-78.32-24.8-60.04-99.99c0,0,14.62-52.73,97.11-63.18Z"/>
+      <path class="cls-8" d="M493.76,144.07v326.32s21.93-7.83,37.07-22.97v-140.19s78.32-24.8,60.04-99.99c0,0-14.62-52.73-97.11-63.18Z"/>
+      <path class="cls-5" d="M497.7,33.65l-49.68-2.7c-18.03-.98-36.11-.98-54.14,0l-49.68,2.7c-116.69,11.23-99.46,93.72-99.46,93.72h63.44c1.91-26.41,19.34-33.65,33.68-34.98,24.55-2.28,40.73,15.98,40.73,40.64v349.12h76.75V133.03c0-24.66,16.17-42.92,40.73-40.64,14.33,1.33,31.77,8.57,33.68,34.98h63.44s17.23-82.49-99.46-93.72Z"/>
+    </g>
+    <text class="cls-9" transform="translate(250.65 552.77)"><tspan class="cls-12" x="0" y="0">P</tspan><tspan class="cls-3" x="21.15" y="0">T</tspan><tspan class="cls-6" x="35.92" y="0">.</tspan><tspan x="45.78" y="0" xml:space="preserve"> T</tspan><tspan class="cls-12" x="70.14" y="0">R</tspan><tspan x="91.4" y="0">I </tspan><tspan class="cls-11" x="109.17" y="0">P</tspan><tspan class="cls-1" x="128.47" y="0">A</tspan><tspan x="149.36" y="0">NDU </tspan><tspan class="cls-4" x="222.14" y="0">PE</tspan><tspan class="cls-2" x="260.53" y="0">L</tspan><tspan class="cls-7" x="277.94" y="0">I</tspan><tspan class="cls-10" x="288.91" y="0">T</tspan><tspan x="304.62" y="0">A</tspan></text>
+  </g>
+</svg>
