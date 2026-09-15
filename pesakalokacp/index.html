@@ -30,14 +30,14 @@
     </div>
     <!-- END PRELOADER -->
 
-   <!-- ==========================================
+    <!-- ==========================================
          HEADER & NAVIGATION
-         ========================================== -->
+    ========================================== -->
     <header class="fixed-top shadow-sm">
         <!-- Tambahan py-3 agar navbar lebih tinggi dan lega -->
         <nav class="navbar navbar-expand-lg navbar-modern py-3">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Pesaka Homepage">
+                <a class="navbar-brand d-flex align-items-center" href="index.html#home" aria-label="Pesaka Homepage">
                     <img src="img/Asset 15.svg" alt="PT Pesaka Loka Kirana" height="45"> <!-- Ukuran logo sedikit dibesarkan -->
                 </a>
                 
@@ -75,8 +75,8 @@
                         <li class="nav-item"><a class="nav-link" href="karir.html">Karir</a></li>
                         
                         <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                            <a href="portal.html" class="btn btn-gold px-4 py-2 shadow-sm w-100">
-                                <i class="bi bi-box-arrow-in-right me-1"></i> Login Akses
+                            <a href="kontak.html" class="btn btn-gold px-4 py-2 shadow-sm w-100 rounded-pill fw-bold font-mono">
+                                <i class="bi bi-telephone-fill me-2"></i>Hubungi Kami
                             </a>
                         </li>
                     </ul>
@@ -117,7 +117,7 @@
                 
                 <!-- Tracking Form -->
                 <div class="tracking-widget mt-2 mx-auto p-3 p-md-4 rounded-4 shadow-lg text-start glass-panel">
-                    <h6 class="text-gold fw-bold mb-3 font-mono text-center text-md-start"><i class="bi bi-search"></i> LACAK KONTAINER / B/L</h6>
+                    <h6 class="text-gold fw-bold mb-3 font-mono text-center text-md-start"><i class="bi bi-search"></i> LACAK BL</h6>
                     <div class="input-group">
                         <input type="text" id="inputContainer" class="form-control form-control-lg bg-light border-0 font-mono" placeholder="Masukkan Nomor...">
                         <button class="btn btn-gold px-4 fw-bold font-sans" type="button" id="btnTrack">Cari</button>
@@ -254,7 +254,7 @@
        <!-- 4. CERTIFICATES (ISO) -->
         <section class="certificate-section py-5 text-center bg-light border-top">
             <div class="container">
-                <h3 class="fw-bold color-brand font-serif text-uppercase" style="letter-spacing: 2px;">Sertfikat</h3>
+                <h3 class="fw-bold color-brand font-serif text-uppercase" style="letter-spacing: 2px;">Sertifikat</h3>
                 <div class="mx-auto my-3" style="width: 50px; height: 3px; background-color: var(--brand-dark); border-radius: 2px;"></div>
                 <p class="text-muted mx-auto mb-4" style="max-width: 600px; font-size: 0.95rem;">
                     PT. Pesaka Loka Kirana secara resmi tersertifikasi dengan standar kualitas dan kepabeanan internasional.
@@ -699,124 +699,127 @@
     <!-- ==========================================
          MODALS (POP-UPS)
          ========================================== -->
-   <!-- 1. Tracking Modal (Desain Modern Minimalist) -->
+   <!-- 1. Tracking Modal (Mobile Optimized & Clean UI) -->
     <div class="modal fade" id="trackingModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content modal-modern">
                 
                 <!-- Loading State -->
                 <div id="trackingLoading" class="text-center py-5">
-                    <div class="spinner-border text-gold mb-3" role="status" style="width: 3rem; height: 3rem;"></div>
-                    <h5 class="fw-bold color-brand font-mono">Menarik Data WMS...</h5>
-                    <p class="text-muted small">Menyinkronkan status kepabeanan.</p>
+                    <div class="spinner-border text-gold mb-3" role="status" style="width: 2.5rem; height: 2.5rem;"></div>
+                    <h5 class="fw-bold color-brand font-mono fs-6">Menarik Data WMS...</h5>
                 </div>
 
                 <!-- Result State (Awalnya d-none) -->
                 <div id="trackingResult" class="d-none">
                     
-                    <!-- Header -->
-                    <div class="modal-modern-header flex-column">
-                        <div class="d-flex justify-content-between w-100">
-                            <div class="icon-circle-soft">
-                                <i class="bi bi-box-seam"></i>
+                    <!-- Header (Icon & Judul menyamping biar hemat space vertikal) -->
+                    <div class="modal-header border-0 pb-0 px-3 px-md-4 pt-3 pt-md-4">
+                        <div class="d-flex align-items-center gap-3 w-100">
+                            <div class="icon-circle-soft flex-shrink-0">
+                                <i class="bi bi-file-earmark-text"></i>
                             </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="flex-grow-1">
+                                <h2 class="modal-modern-title mb-1">Rincian Dokumen</h2>
+                                <p class="text-muted small mb-0 lh-sm" style="font-size: 0.8rem;">Data operasional WMS Inalogis</p>
+                            </div>
+                            <button type="button" class="btn-close align-self-start" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <h2 class="modal-modern-title">Rincian House BL</h2>
-                        <p class="modal-modern-subtitle">Data operasional dan kepabeanan terkini berdasarkan sistem WMS Inalogis.</p>
                     </div>
 
                     <!-- Body -->
-                    <div class="modal-modern-body">
+                    <div class="modal-body px-3 px-md-4 pb-0 pt-3">
                         
                         <!-- Top Badges Status -->
-                        <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
-                            <span class="badge-modern bg-success text-white px-3" style="font-size: 0.85rem;"><i class="bi bi-check-circle me-1"></i> STORED</span>
-                            <span class="badge-modern bg-light text-dark border">Terminal: NCT1</span>
-                            <span class="badge-modern bg-light text-dark border">TPS: PESA</span>
-                            <span class="badge-modern bg-light text-dark border">Jenis: LCL</span>
+                        <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+                            <span class="badge bg-success text-white px-3 py-2" style="font-size: 0.75rem; letter-spacing: 1px;"><i class="bi bi-check-circle me-1"></i> STORED</span>
+                            <span class="badge bg-light text-dark border py-2 font-mono">Terminal: NCT1</span>
+                            <span class="badge bg-light text-dark border py-2 font-mono">TPS: PESA</span>
+                            <span class="badge bg-light text-dark border py-2 font-mono">Jenis: LCL</span>
                         </div>
 
-                        <div class="row g-3">
-                            <!-- Kolom Kiri: Dokumen & Kargo -->
+                        <div class="row g-2 g-md-3">
+                            <!-- Card Kiri: Dokumen & Kargo -->
                             <div class="col-md-6">
-                                <div class="modern-data-box h-100">
+                                <div class="data-card">
                                     <div class="mb-3">
-                                        <div class="modern-label">Nr. House BL</div>
-                                        <div class="modern-value-mono text-primary fs-5" id="showContainerNumber">GJKT1702060701</div>
+                                        <div class="data-label-sm">Nr. House BL</div>
+                                        <div class="data-value-mono text-primary fs-6" id="showContainerNumber">SNKO020260820639</div>
                                     </div>
-                                    <div class="row mb-3">
+                                    <div class="row mb-3 g-2">
                                         <div class="col-6">
-                                            <div class="modern-label">Consolidator</div>
-                                            <div class="modern-value-sans">LSI</div>
+                                            <div class="data-label-sm">Consolidator</div>
+                                            <div class="data-value-sans">SMU</div>
                                         </div>
                                         <div class="col-6">
-                                            <div class="modern-label">Consignee</div>
-                                            <div class="modern-value-sans">GRETA WINOTO</div>
+                                            <div class="data-label-sm">Consignee</div>  
+                                            <div class="data-value-sans">PT. MCA LOGISTIK INDONESIA</div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="modern-label">QTY</div>
-                                            <div class="modern-value-mono">1 PK</div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="modern-label">Brut</div>
-                                            <div class="modern-value-mono">-</div>
+                                    <div class="row g-2 border-top pt-2 mt-2">
+                                        <div class="col-4">
+                                            <div class="data-label-sm">QTY</div>
+                                            <div class="data-value-mono">1 PK</div>
                                         </div>
                                         <div class="col-4">
-                                            <div class="modern-label">Vol</div>
-                                            <div class="modern-value-mono">-</div>
+                                            <div class="data-label-sm">Brutto</div>
+                                            <div class="data-value-mono text-muted">-</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="data-label-sm">Volume</div>
+                                            <div class="data-value-mono text-muted">-</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Kolom Kanan: Kapal & Waktu -->
+                            <!-- Card Kanan: Kapal & Waktu -->
                             <div class="col-md-6">
-                                <div class="modern-data-box h-100">
+                                <div class="data-card">
                                     <div class="mb-3">
-                                        <div class="modern-label">Container Nr. / Vessel</div>
-                                        <div class="modern-value-mono fs-5">OCGU8038215</div>
-                                        <div class="modern-value-sans small text-muted mt-1">ST ISLAND (ETA: 10/03/2017)</div>
+                                        <div class="data-label-sm">Container Nr. / Vessel</div>
+                                        <div class="data-value-mono fs-6 mb-1">OCGU8038215</div>
+                                        <div class="data-value-sans text-muted" style="font-size: 0.8rem;">ST ISLAND (ETA: 10/03/2017)</div>
                                     </div>
                                     
-                                    <div class="border-top pt-3 mt-3">
-                                        <div class="row g-2">
-                                            <div class="col-12 mb-1">
-                                                <div class="modern-label">Tgl. Masuk TPS</div>
-                                                <div class="modern-value-mono">14/03/2017, 07:00:00</div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="modern-label">Tgl. Stripping</div>
-                                                <div class="modern-value-mono text-muted">-</div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="modern-label">Tgl. Release</div>
-                                                <div class="modern-value-mono text-muted">-</div>
-                                            </div>
+                                    <div class="row g-2 border-top pt-2 mt-2">
+                                        <div class="col-12 mb-1">
+                                            <div class="data-label-sm">Tgl. Masuk TPS</div>
+                                            <div class="data-value-mono text-success">14/9/2026, 16.21.53</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="data-label-sm">Tgl. Stripping</div>
+                                            <div class="data-value-mono text-muted">-</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="data-label-sm">Tgl. Release</div>
+                                            <div class="data-value-mono text-muted">-</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Status Bea Cukai (Full Width Box) -->
-                        <div class="modern-data-box mt-3 mb-0" style="background-color: #fff9ed; border-color: #f6e5c0;">
-                            <div class="modern-label text-warning">Status Pemeriksaan Bea Cukai</div>
-                            <div class="d-flex flex-wrap gap-3 mt-2">
-                                <span class="modern-value-sans text-success"><i class="bi bi-check-circle-fill me-1"></i> P2: RELEASED</span>
-                                <span class="modern-value-sans text-success"><i class="bi bi-check-circle-fill me-1"></i> PPC3: RELEASED</span>
-                                <span class="modern-value-sans text-warning"><i class="bi bi-clock-fill me-1"></i> PPC2: PENDING</span>
+                        <!-- Status Bea Cukai -->
+                        <div class="data-card mt-2 mt-md-3 mb-0" style="background-color: #fffaf0; border-color: #fcefd4;">
+                            <div class="data-label-sm text-warning mb-2"><i class="bi bi-shield-check me-1"></i>Status Pemeriksaan Bea Cukai</div>
+                            <div class="d-flex flex-wrap gap-2 gap-md-3">
+                                <span class="data-value-sans text-success" style="font-size: 0.8rem;"><i class="bi bi-check-circle-fill me-1"></i> P2: RELEASED</span>
+                                <span class="data-value-sans text-success" style="font-size: 0.8rem;"><i class="bi bi-check-circle-fill me-1"></i> PPC3: RELEASED</span>
+                                <span class="data-value-sans text-warning" style="font-size: 0.8rem;"><i class="bi bi-clock-fill me-1"></i> PPC2: PENDING</span>
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- Footer Action Buttons (Kanan Bawah) -->
-                    <div class="modal-modern-footer">
-                        <button type="button" class="btn-modern-cancel" data-bs-dismiss="modal">Tutup</button>
-                        <button type="button" class="btn-modern-accept" onclick="alert('Mengunduh dokumen B/L...')">Unduh Dokumen</button>
+                    <!-- Footer Action Buttons (Responsive Grid) -->
+                    <div class="modal-footer border-0 px-3 px-md-4 pb-3 pb-md-4 pt-4">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end w-100">
+                            <button type="button" class="btn-modern-cancel" data-bs-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn-modern-accept" onclick="alert('Mengunduh dokumen DO / B/L...')">
+                                <i class="bi bi-download me-1 d-md-none"></i> Unduh Dokumen
+                            </button>
+                        </div>
                     </div>
 
                 </div>
