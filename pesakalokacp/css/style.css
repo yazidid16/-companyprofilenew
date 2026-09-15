@@ -487,6 +487,84 @@ body {
     border: 1px solid rgba(196, 154, 68, 0.2) !important;
 }
 
+/* MODERN MODAL & RESPONSIVE TWEAKS */
+.modal-modern {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    font-family: 'Inter', sans-serif;
+}
+.icon-circle-soft {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(196, 154, 68, 0.12);
+    color: var(--gold-primary, #C49A44);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+.modal-modern-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--brand-dark, #241614);
+    font-size: 1.3rem;
+}
+.data-card {
+    background: #fdfdfd;
+    border: 1px solid #eef0f2;
+    border-radius: 14px;
+    padding: 16px;
+    height: 100%;
+}
+.data-label-sm {
+    font-size: 0.68rem;
+    color: #868e96;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+.data-value-mono {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--brand-dark, #241614);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.data-value-sans {
+    color: var(--brand-dark, #241614);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.btn-modern-cancel {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #495057;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-modern-cancel:hover { background-color: #e2e6ea; }
+.btn-modern-accept {
+    background-color: var(--gold-primary, #C49A44);
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-modern-accept:hover { background-color: #b0893b; color: #fff; }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .modal-modern-title { font-size: 1.15rem; }
+    .data-card { padding: 12px; }
+    .data-value-mono, .data-value-sans { font-size: 0.85rem; }
+}
+
 /* --- Pop-up Notifikasi Cookies --- */
 .cookie-popup {
     position: fixed;
