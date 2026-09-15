@@ -81,23 +81,32 @@ document.addEventListener("DOMContentLoaded", function() {
         const noKontainer = inputContainer.value.trim().toUpperCase();
         
         if (noKontainer === "") {
-            alert("Silakan masukkan Nomor Kontainer atau B/L terlebih dahulu.");
+            alert("Silakan masukkan Nomor Kontainer atau HBL terlebih dahulu.");
             return;
         }
+
+        const trackingModalEl = document.getElementById('trackingModal');
+        const showContainerNumber = document.getElementById('showContainerNumber');
+        const trackingLoading = document.getElementById('trackingLoading');
+        const trackingResult = document.getElementById('trackingResult');
 
         const trackingModal = new bootstrap.Modal(trackingModalEl);
         trackingModal.show();
 
-        if (showContainerNumber) showContainerNumber.innerText = noKontainer;
-        if (statusBadge) statusBadge.innerText = "LOADING...";
-        if (trackingSpinner) trackingSpinner.style.display = "inline-block";
-        if (infoText) infoText.innerHTML = "<i class='bi bi-info-circle-fill text-gold me-1'></i> Sedang menyinkronkan data dengan server...";
+        // 1. Tampilkan Loading, Sembunyikan Hasil
+        if(showContainerNumber) showContainerNumber.innerText = noKontainer;
+        if(trackingLoading) trackingLoading.classList.remove('d-none');
+        if(trackingResult) trackingResult.classList.add('d-none');
 
-        // SIMULASI SEMENTARA (Akan berjalan sebelum API backend dibuat)
+        // 2. Simulasi tarik data API selama 2 detik (Nanti diganti Fetch API WMS beneran)
         setTimeout(() => {
-            if (trackingSpinner) trackingSpinner.style.display = "none";
-            if (statusBadge) statusBadge.innerText = "ARRIVED";
-            if (infoText) infoText.innerHTML = "<i class='bi bi-info-circle-fill text-gold me-1'></i> Kontainer telah tiba di fasilitas TPS Pesaka. Untuk melihat rincian dokumen (B/L, HBL), silakan login ke portal.";
+            if(trackingLoading) trackingLoading.classList.add('d-none');
+            if(trackingResult) {
+                trackingResult.classList.remove('d-none');
+                // Efek fade-in halus
+                trackingResult.style.opacity = 0;
+                setTimeout(() => trackingResult.style.opacity = 1, 50);
+            }
         }, 2000);
     };
 
